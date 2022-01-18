@@ -1,0 +1,12 @@
+doctype html
+html(lang="en")
+  head
+    - var stylesPath = (customPath ? customPath : 'assets/css/style.css')
+    link(href=stylesPath, rel='stylesheet')
+    title #{title}
+    body
+      aside.floatRight
+        nav
+          a(href='/') Home
+          a(href='/about') About
+          a(href='/more') More

@@ -1,0 +1,28 @@
+body {
+    background: #000;
+    color: #fff;
+}
+
+.floatRight {
+    float: right;
+}
+
+.floatRight a {
+    padding: 5px;
+}
+
+.header {
+    text-transform: uppercase;
+}
+
+.linkWrapper {
+    display: block;
+}
+
+.link {
+    text-transform: capitalize;
+}
+
+#knowMore {
+    margin: 20px;
+}

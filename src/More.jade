@@ -1,0 +1,16 @@
+include partials/Layout
+div#more
+    h2.header #{result.as}
+    p #{result.description}
+    section#knowMore
+      - if (show) {
+          span.linkWrapper I am a 
+            a(href='/more/coder').link coder
+          span.linkWrapper I am a 
+            a(href='/more/designer').link designer
+      - }
+      - else {
+          span.linkWrapper
+            a(href='/more').link Go to More
+      - }
+
