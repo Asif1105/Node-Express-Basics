@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const routes = require('./routes');
-const users = require('./routes/users');
+const port = 3000;
 
 const app = express();
 
@@ -10,8 +10,7 @@ app.set('view engine', 'jade');
 
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 app.use('/', routes);
-// app.use('/authors', users);
 
-app.listen(3000);
+app.listen(process.env.port || 3000);
 
 module.exports = app;
